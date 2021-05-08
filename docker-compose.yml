@@ -1,0 +1,17 @@
+version: "3"
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: devops-jenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - /or_yuval_devops_course/jenkins:/var/jenkins_home
+  redis:
+    image: tomcat:9.0
+    container_name: devops-tomcat
+    ports:
+      - 8888:8080
+    volumes:
+      - /or_yuval_devops_course/jenkins/tomcat:/usr/local/tomcat/webapps/status
