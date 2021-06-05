@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Devops Course HIT</title>
+		
 	</head>
 	<body>
 		<style type="text/css">
